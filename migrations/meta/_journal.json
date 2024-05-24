@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1716565857668,
+      "tag": "0000_clean_jean_grey",
+      "breakpoints": false
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1716566971671,
+      "tag": "0001_spicy_northstar",
+      "breakpoints": false
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1716567999949,
+      "tag": "0002_public_paibok",
+      "breakpoints": false
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1716568702033,
+      "tag": "0003_lyrical_mephisto",
+      "breakpoints": false
+    }
+  ]
+}
