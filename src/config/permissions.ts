@@ -7,9 +7,14 @@ export const ALL_PERMISSIONS = [
     'user:roles:deleted',
 
 
+    // for roles
+    'roles:write',
+
     // for posts
     'posts:write',
     'posts:read',
+    'posts:delete',
+    'post:edit-own'
 ] as const;
 // acc -> accumulator
 export const PERMISSIONS = ALL_PERMISSIONS.reduce((acc, permission) =>{
