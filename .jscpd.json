@@ -1,0 +1,7 @@
+{
+    "threshold": 20,
+    "exclude": [
+      "node_modules/**",
+      "migrations/**"
+    ]
+}
