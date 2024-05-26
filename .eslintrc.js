@@ -4,19 +4,25 @@ module.exports = {
       ecmaVersion: 2020,
       sourceType: 'module',
     },
-    settings: {
-      react: {
-        version: 'detect',
-      },
+    env: {
+      browser: true,
+      node: true,
+      es6: true,
     },
     extends: [
       'eslint:recommended',
       'plugin:@typescript-eslint/recommended',
+      'prettier',
     ],
+    plugins: ['@typescript-eslint'],
     rules: {
-      // Add your custom rules here
-      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': ['error'],
+      '@typescript-eslint/explicit-function-return-type': 'off',
     },
+    overrides: [
+      {
+        files: ['*.ts', '*.tsx'],
+      },
+    ],
   };
   

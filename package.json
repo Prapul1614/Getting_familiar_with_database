@@ -2,7 +2,7 @@
 	"scripts": {
 		"dev": "tsx watch src/main.ts",
 		"migrate": "drizzle-kit generate:pg",
-		"lint": "eslint . --ext .ts,.tsx",
+		"lint": "eslint .",
 		"build": "tsc"
 	},
 	"dependencies": {
