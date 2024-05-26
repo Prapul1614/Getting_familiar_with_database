@@ -1,7 +1,9 @@
 {
 	"scripts": {
 		"dev": "tsx watch src/main.ts",
-		"migrate": "drizzle-kit generate:pg"
+		"migrate": "drizzle-kit generate:pg",
+		"lint": "eslint . --ext .ts,.tsx",
+		"build": "tsc"
 	},
 	"dependencies": {
 		"argon2": "^0.30.3",
@@ -19,6 +21,8 @@
 	"devDependencies": {
 		"@types/jsonwebtoken": "^9.0.2",
 		"@types/pg": "^8.6.6",
+		"@typescript-eslint/eslint-plugin": "^7.10.0",
+		"@typescript-eslint/parser": "^7.10.0",
 		"drizzle-kit": "^0.17.6",
 		"eslint": "^9.3.0",
 		"tsx": "^3.12.7",
