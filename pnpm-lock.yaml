@@ -42,6 +42,9 @@ importers:
         specifier: ^3.21.4
         version: 3.23.8
     devDependencies:
+      '@eslint/js':
+        specifier: ^9.3.0
+        version: 9.3.0
       '@types/jsonwebtoken':
         specifier: ^9.0.2
         version: 9.0.6
@@ -64,8 +67,11 @@ importers:
         specifier: ^3.12.7
         version: 3.14.0
       typescript:
-        specifier: ^5.0.4
+        specifier: ^5.4.5
         version: 5.4.5
+      typescript-eslint:
+        specifier: ^7.10.0
+        version: 7.10.0(eslint@9.3.0)(typescript@5.4.5)
       zod-to-json-schema:
         specifier: ^3.21.1
         version: 3.23.0(zod@3.23.8)
@@ -1645,6 +1651,16 @@ packages:
 
   type@2.7.2:
     resolution: {integrity: sha512-dzlvlNlt6AXU7EBSfpAscydQ7gXB+pPGsPnfJnZpiNJBDj7IaJzQlBZYGdEi4R9HmPdBv2XmWJ6YUtoTa7lmCw==}
+
+  typescript-eslint@7.10.0:
+    resolution: {integrity: sha512-thO8nyqptXdfWHQrMJJiJyftpW8aLmwRNs11xA8pSrXneoclFPstQZqXvDWuH1WNL4CHffqHvYUeCHTit6yfhQ==}
+    engines: {node: ^18.18.0 || >=20.0.0}
+    peerDependencies:
+      eslint: ^8.56.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   typescript@5.4.5:
     resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
@@ -3297,6 +3313,17 @@ snapshots:
       prelude-ls: 1.2.1
 
   type@2.7.2: {}
+
+  typescript-eslint@7.10.0(eslint@9.3.0)(typescript@5.4.5):
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 7.10.0(@typescript-eslint/parser@7.10.0(eslint@9.3.0)(typescript@5.4.5))(eslint@9.3.0)(typescript@5.4.5)
+      '@typescript-eslint/parser': 7.10.0(eslint@9.3.0)(typescript@5.4.5)
+      '@typescript-eslint/utils': 7.10.0(eslint@9.3.0)(typescript@5.4.5)
+      eslint: 9.3.0
+    optionalDependencies:
+      typescript: 5.4.5
+    transitivePeerDependencies:
+      - supports-color
 
   typescript@5.4.5: {}
 

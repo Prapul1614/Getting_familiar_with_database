@@ -1,4 +1,15 @@
-module.exports = {
+// @ts-check
+
+import eslint from '@eslint/js';
+// const { eslint } = require('@eslint/eslintrc');
+import tseslint from 'typescript-eslint';
+// const { tseslint } = require('typescript-eslint');
+
+export default tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+);
+/*module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
       ecmaVersion: 2020,
@@ -25,5 +36,5 @@ module.exports = {
         ignores: ['node_modules', 'migrations']
       },
     ],
-  };
+  };*/
   

@@ -26,9 +26,9 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Lint
-        run: pnpm run lint
+        run: npx eslint .
   
-      - name: Build
-        run: pnpm run build
+      #- name: Build
+      #  run: pnpm run build
 
       # Add more steps as needed

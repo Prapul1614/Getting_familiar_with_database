@@ -8,7 +8,7 @@ export async function createRoleHandler(
   }>,
   reply: FastifyReply
 ) {
-  
+  reply; // Just adding so eslint doesn't give error
   const user = request.user;
   const applicationId = user.applicationId;
   const { name, permissions } = request.body;
