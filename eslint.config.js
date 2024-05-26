@@ -22,6 +22,7 @@ module.exports = {
     overrides: [
       {
         files: ['*.ts', '*.tsx'],
+        ignores: ['node_modules', 'migrations']
       },
     ],
   };
