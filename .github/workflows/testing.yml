@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - new_branch
+      - main
 
 
 jobs:
