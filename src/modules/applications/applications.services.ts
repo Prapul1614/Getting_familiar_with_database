@@ -1,7 +1,7 @@
 import { InferModel } from "drizzle-orm";
 import { db } from "../../db";
 import { application } from "../../db/schema";
-import { applicationRoutes } from "./applications.routes";
+//import { applicationRoutes } from "./applications.routes";
 
 export async function createApplication(data: InferModel<typeof application,'insert'>){
     const result = await db.insert(application).values(data).returning();

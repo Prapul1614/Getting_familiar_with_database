@@ -10,6 +10,7 @@ export async function createApplicationHandler(
     }>,
     reply: FastifyReply
 ){
+    reply; // Just addinging this line so es lint doesnt give error that defined but not used
     const {name} = request.body;
 
     const application = await createApplication({

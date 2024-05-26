@@ -27,6 +27,7 @@ export async function buildServer(){
     app.decorateRequest("user", null);
 
     app.addHook('onRequest', async function(request, reply){
+        reply; // Just addinging this line so es lint doesnt give error that defined but not used
         const authHeader = request.headers.authorization;
 
         if (!authHeader) return;
@@ -37,7 +38,7 @@ export async function buildServer(){
             console.log("user", decoded);
 
             request.user = decoded;
-        } catch (e) {}
+        } catch (e) { console.log(e);}
     })
 
     // register plugins

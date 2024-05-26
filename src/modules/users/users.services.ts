@@ -2,7 +2,7 @@ import { InferModel, and, eq } from "drizzle-orm";
 import { application, roles, users, usersToRoles } from "../../db/schema";
 import { db } from "../../db";
 import argon2 from 'argon2';
-import { TypeOf } from "zod";
+//import { TypeOf } from "zod";
 
 export async function createUser(data: InferModel<typeof users, 'insert'>){
 

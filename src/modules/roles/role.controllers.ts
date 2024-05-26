@@ -8,7 +8,7 @@ export async function createRoleHandler(
   }>,
   reply: FastifyReply
 ) {
-  
+  reply; // Just addinging this line so es lint doesnt give error that defined but not used
   const user = request.user;
   const applicationId = user.applicationId;
   const { name, permissions } = request.body;

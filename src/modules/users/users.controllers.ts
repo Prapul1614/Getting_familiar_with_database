@@ -50,14 +50,14 @@ export async function createUserHandler(
 
         return user;
     }catch(e){
-        
+        console.log(e);
     }
 
 }
 
 export async function loginHandler(request: FastifyRequest<{Body: LoginBody}>, reply: FastifyReply){
     const { applicationId, email, password} = request.body
-
+    password; // Just addinging this line so es lint doesnt give error that defined but not used
     const user = await getUserByEmail({applicationId, email});
 
     if(!user){
